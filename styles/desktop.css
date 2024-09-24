@@ -1,0 +1,226 @@
+@media (min-width: 64em) {
+  .cabecalho {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+  }
+
+  .cabecalho__titulo {
+    font-size: 3.6rem; /* Tamanho maior para telas grandes */
+  }
+
+  .navegacao__elemento a {
+    font-size: 2rem; /* Ajuste para melhor legibilidade */
+  }
+
+  .navegacao__lista {
+    gap: 3rem;
+  }
+
+  .apresentacao {
+    flex-direction: row; /* Alinha a imagem e o texto lado a lado */
+    justify-content: space-between; /* Espaçamento igual entre os itens */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 4rem 6rem; /* Padding generoso */
+  }
+
+  .apresentacao__foto {
+    width: 20rem; /* Tamanho da foto ajustado para 1024px */
+  }
+
+  .apresentacao__conteiner {
+    text-align: left; /* Mantém o texto alinhado à esquerda */
+    flex: 1; /* Permite que o container de texto ocupe espaço */
+  }
+
+  .apresentacao__titulo {
+    font-size: 3.6rem; /* Tamanho do título para desktops */
+    margin-bottom: 2.5rem; /* Aumenta a margem inferior para mais espaçamento */
+    text-align: center; /* Centralizado, se necessário */
+  }
+
+  .apresentacao__subtitulo {
+    font-size: 2.2rem; /* Subtítulo maior para melhor legibilidade */
+    margin-bottom: 2.5rem;
+    text-align: center; /* Centralizado, se necessário */
+  }
+
+  .redes {
+    gap: 3rem; /* Maior espaçamento entre os ícones */
+  }
+
+  .redes__elemento a {
+    font-size: 3rem; /* Fonte maior para ícones de redes sociais */
+  }
+
+  .sobre-mim {
+    padding: 4rem 6rem;
+    text-align: left; /* Alinhamento à esquerda para um estilo mais tradicional em telas grandes */
+  }
+
+  .sobre-mim__titulo {
+    font-size: 5rem; /* Tamanho maior do título para desktops */
+    text-align: center;
+    margin-bottom: 4rem; /* Espaço entre o título e os itens */
+  }
+
+  .sobre-mim__texto {
+    font-size: 2rem; /* Texto mais legível para telas grandes */
+    margin-bottom: 3rem;
+    line-height: 2;
+  }
+
+  .habilidades__lista {
+    grid-template-columns: repeat(6, 1fr); /* 3 colunas em Desktops */
+    justify-items: center; /* Centraliza os itens */
+    gap: 3rem;
+  }
+
+  .habilidades__titulo {
+    font-size: 5rem; /* Tamanho maior do título para desktops */
+    margin-bottom: 4rem; /* Espaço entre o título e os itens */
+  }
+
+  .habilidades__icone {
+    width: 80px; /* Ícone maior em telas grandes */
+    height: 80px;
+  }
+
+  .habilidades__nome {
+    font-size: 2rem; /* Texto mais legível para telas grandes */
+  }
+
+  .hobbies__lista {
+    grid-template-columns: repeat(6, 1fr); /* 3 colunas em desktops */
+  }
+
+  .hobbies__titulo {
+    font-size: 5rem; /* Tamanho maior do título para desktops */
+    margin-bottom: 4rem; /* Espaço entre o título e os itens */
+    margin-top: 4rem;
+  }
+
+  .hobbies__icone {
+    width: 80px; /* Ícone maior em telas grandes */
+    height: 80px;
+  }
+
+  .hobbies__nome {
+    font-size: 1.6rem; /* Texto mais legível para telas grandes */
+  }
+
+  .formacao__lista {
+    grid-template-columns: repeat(3, 1fr); /* 1 coluna em Desktop */
+  }
+
+  .formacao__titulo {
+    font-size: 5rem; /* Título maior em desktops */
+    margin-bottom: 4rem; /* Espaço entre o título e os itens */
+    margin-top: 4rem;
+  }
+
+  .formacao__icone {
+    width: 60px; /* Ícones maiores em telas grandes */
+  }
+
+  .formacao__nome {
+    font-size: 1.8rem; /* Texto principal maior */
+  }
+
+  .formacao__detalhe {
+    font-size: 1.4rem; /* Fonte dos detalhes maior para melhor legibilidade */
+  }
+
+  .projetos__container {
+    grid-template-columns: 1fr;
+  }
+
+  .projetos__titulo {
+    text-align: center; /* Centraliza o título da seção */
+    font-size: 5rem; /* Aumenta o tamanho do título */
+    margin-bottom: 4rem; /* Espaço entre o título e os itens */
+    margin-top: 4rem;
+  }
+
+  .projeto__item {
+    flex-direction: row-reverse; /* Imagem à direita e informações à esquerda */
+  }
+
+  .projeto__imagem {
+    width: 40%; /* Aumenta a largura da imagem */
+    margin-left: 1.5rem; /* Espaço maior entre imagem e informações */
+  }
+
+  .projeto__info {
+    width: 60%; /* Informações ocupam mais espaço */
+    margin-left: 25rem;
+  }
+
+  .projeto__titulo {
+    font-size: 3rem; /* Aumenta o tamanho do título */
+  }
+
+  .projeto__descricao {
+    font-size: 2rem; /* Aumenta o tamanho da descrição */
+  }
+
+  .projeto__botoes {
+    justify-content: flex-start; /* Alinha botões à esquerda */
+  }
+
+  .contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4rem;
+    gap: 3rem;
+  }
+
+  /* A imagem aparece à esquerda em 1024px */
+  .contato img {
+    display: block;
+    max-width: 800px; /* Tamanho ajustado da imagem */
+    max-height: auto;
+    margin-right: 2rem;
+    flex: 1; /* A imagem ocupa 1 parte do espaço */
+  }
+
+  /* Info e formulário aparecem à direita */
+  .contato__info {
+    padding-right: 2rem;
+  }
+
+  .contato__info h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .contato__info p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Formulário logo abaixo do info */
+  .contato__formulario {
+    width: 100%;
+    max-width: auto;
+  }
+
+  .contato__formulario label {
+    font-size: 2rem;
+  }
+
+  .contato__formulario input,
+  .contato__formulario textarea {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .contato__formulario textarea {
+    height: 65px; /* Aumenta ainda mais a altura da textarea em telas maiores */
+  }
+
+  .contato__botao {
+    font-size: 2rem;
+  }
+}

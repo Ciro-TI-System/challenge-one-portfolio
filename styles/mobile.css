@@ -1,0 +1,482 @@
+/* ------------------------------ Seção Menu -------------------------------*/
+/* Estilos do cabeçalho */
+.cabecalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--cor-fundo-cabecalho);
+  color: var(--cor-texto-cabecalho);
+}
+
+.cabecalho__logo {
+  width: 8rem;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.cabecalho__logo:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.cabecalho__titulo {
+  font-size: 2.4rem;
+  margin-top: 1rem;
+}
+
+.navegacao {
+  margin-top: 2rem;
+}
+
+.navegacao__lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.navegacao__elemento a {
+  text-decoration: none;
+  color: var(--cor-texto-cabecalho);
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.navegacao__elemento a:hover {
+  color: var(--cor-hover);
+}
+
+/* Animação ao passar o mouse */
+.navegacao__elemento a {
+  position: relative;
+}
+
+.navegacao__elemento a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: var(--cor-hover);
+  transition: width 0.3s ease;
+}
+
+.navegacao__elemento a:hover::after {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+/* ------------------------------ Seção Apresentação ------------------------------*/
+.apresentacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: var(--cor-fundo);
+}
+
+.apresentacao__foto {
+  width: 12rem;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.apresentacao__conteiner {
+  text-align: center;
+}
+
+.apresentacao__titulo {
+  font-size: 2.4rem;
+  color: var(--cor-texto);
+  margin-bottom: 1rem;
+}
+
+.apresentacao__subtitulo {
+  font-size: 1.6rem;
+  color: var(--cor-texto);
+  margin-bottom: 2rem;
+}
+
+.redes {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.redes__elemento a {
+  text-decoration: none;
+  color: var(--cor-texto);
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: color 0.3s ease;
+}
+
+.redes__elemento a:hover {
+  color: var(--cor-hover);
+}
+
+/* ------------------------------ Seção Sobre mim ---------------------------------*/
+.sobre-mim {
+  padding: 2rem 1rem;
+  background-color: var(--cor-fundo);
+  text-align: center;
+}
+
+.sobre-mim__titulo {
+  font-size: 2.4rem;
+  color: var(--cor-texto);
+  margin-bottom: 2rem;
+}
+
+.sobre-mim__texto {
+  font-size: 1.6rem;
+  color: var(--cor-texto);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/*------------------------------ Seção de Habilidades ----------------------------*/
+.habilidades {
+  padding: 2rem 1.5rem;
+  background-color: var(--cor-de-fundo);
+  text-align: center; /* Centraliza o texto */
+}
+
+.habilidades__titulo {
+  font-size: 2.4rem; /* Tamanho maior para melhor visualização */
+  color: var(--cor-texto-titulo);
+  margin-bottom: 1.5rem; /* Margem reduzida para um layout mais compacto */
+  font-weight: bold;
+  position: relative;
+}
+
+.habilidades__titulo::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--cor-principal);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.habilidades__lista {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas em mobile */
+  gap: 2rem; /* Espaçamento entre os itens */
+  justify-items: center; /* Centraliza os itens na grade */
+  padding: 0; /* Remove padding extra */
+  list-style: none; /* Remove marcadores da lista */
+}
+
+.habilidades__elemento {
+  display: flex;
+  flex-direction: column; /* Alinha ícone e nome verticalmente */
+  align-items: center; /* Centraliza os itens */
+  transition: transform 0.3s ease; /* Suavidade na transformação */
+}
+
+/* Ícones das habilidades */
+.habilidades__icone {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.5rem; /* Espaçamento menor entre ícone e nome */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Suavidade no efeito de crescimento */
+}
+
+/* Nome das habilidades */
+.habilidades__nome {
+  font-size: 1.2rem; /* Aumenta a legibilidade */
+  color: var(--cor-texto);
+}
+
+/* Efeitos ao passar o mouse sobre os ícones */
+.habilidades__elemento:hover .habilidades__icone {
+  transform: scale(1.2); /* Aumenta o tamanho do ícone */
+  filter: brightness(1.2); /* Aumenta o brilho do ícone */
+}
+
+.habilidades__elemento:hover .habilidades__nome {
+  color: var(
+    --cor-principal
+  ); /* Muda a cor do nome da habilidade ao passar o mouse */
+}
+
+/*------------------------------ Seção de Hobbies --------------------------------*/
+.hobbies {
+  padding: 2rem 1.5rem;
+  background-color: var(--cor-de-fundo);
+  text-align: center; /* Centraliza o texto */
+}
+
+.hobbies__titulo {
+  font-size: 2.4rem; /* Tamanho maior para melhor visualização */
+  color: var(--cor-texto-titulo);
+  margin-bottom: 2.5rem; /* Espaçamento abaixo do título */
+  font-weight: bold;
+  position: relative;
+}
+
+.hobbies__titulo::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--cor-principal);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.hobbies__lista {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas em mobile */
+  gap: 2rem; /* Espaçamento entre os itens */
+  justify-items: center; /* Centraliza os itens na grade */
+  padding: 0; /* Remove padding extra */
+  list-style: none; /* Remove marcadores da lista */
+}
+
+.hobbies__elemento {
+  display: flex;
+  flex-direction: column; /* Alinha ícone e nome verticalmente */
+  align-items: center; /* Centraliza os itens */
+  transition: transform 0.3s ease; /* Suavidade na transformação */
+}
+
+/* Ícones dos hobbies */
+.hobbies__icone {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.5rem; /* Espaçamento menor entre ícone e nome */
+  transition: transform 0.3s ease, filter 0.3s ease; /* Suavidade no efeito de crescimento */
+}
+
+/* Nome dos hobbies */
+.hobbies__nome {
+  font-size: 1.2rem; /* Aumenta a legibilidade */
+  color: var(--cor-texto);
+}
+
+/* Efeitos ao passar o mouse sobre os ícones */
+.hobbies__elemento:hover .hobbies__icone {
+  transform: scale(1.2); /* Aumenta o tamanho do ícone */
+  filter: brightness(1.2); /* Aumenta o brilho do ícone */
+}
+
+.hobbies__elemento:hover .hobbies__nome {
+  color: var(
+    --cor-principal
+  ); /* Muda a cor do nome do hobby ao passar o mouse */
+}
+
+/*Formação*/
+.formacao {
+  padding: 2rem 1.5rem;
+  background-color: var(--cor-de-fundo);
+  text-align: center; /* Centraliza o texto */
+}
+
+.formacao__titulo {
+  font-size: 2.4rem; /* Tamanho maior para o título */
+  color: var(--cor-texto-titulo);
+  margin-bottom: 2.5rem; /* Espaçamento abaixo do título */
+  font-weight: bold;
+  position: relative;
+}
+
+.formacao__titulo::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--cor-principal);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Lista de formação */
+.formacao__lista {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 1 coluna em mobile */
+  gap: 1.5rem; /* Espaçamento entre os itens */
+  justify-items: center; /* Centraliza os itens dentro da grid */
+  list-style: none; /* Remove os marcadores da lista */
+  padding: 0;
+  margin: 0;
+}
+
+.formacao__elemento {
+  display: flex;
+  align-items: center; /* Alinha os ícones e textos no centro */
+  gap: 1rem; /* Espaçamento entre o ícone e o texto */
+  transition: transform 0.3s ease; /* Animação suave */
+}
+
+.formacao__elemento:hover {
+  transform: translateY(-10px); /* Eleva o elemento ao passar o mouse */
+}
+
+/* Ícones das instituições */
+.formacao__icone {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Suavidade ao passar o mouse */
+  margin-top: 3rem;
+}
+
+/* Nomes das formações */
+.formacao__nome {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--cor-texto);
+  margin: 0; /* Remove margens padrão */
+}
+
+/* Detalhes das formações */
+.formacao__detalhe {
+  font-size: 1rem;
+  color: var(--cor-texto-secundario);
+  margin-top: 0.3rem;
+}
+
+/* Efeito ao passar o mouse sobre o ícone */
+.formacao__elemento:hover .formacao__icone {
+  transform: scale(1.1); /* Aumenta o tamanho do ícone */
+  filter: brightness(1.2); /* Aumenta o brilho */
+}
+
+/* Projetos */
+.projetos__container {
+  grid-template-columns: 1fr;
+}
+
+.projetos__titulo {
+  text-align: center; /* Centraliza o título da seção */
+  font-size: 2rem; /* Aumenta o tamanho do título */
+  margin-bottom: 2rem; /* Espaço entre o título e os itens */
+  margin-top: 2rem;
+}
+
+.projeto__item {
+  display: flex;
+  flex-direction: column; /* Imagem em cima e conteúdo abaixo */
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  background-color: var(--cor-fundo-projeto);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projeto__imagem {
+  width: 100%; /* Imagem ocupa toda a largura */
+  height: auto;
+  margin-bottom: 1rem; /* Espaço entre imagem e informações */
+}
+
+.projeto__info {
+  width: 100%;
+}
+
+.projeto__titulo {
+  font-size: 3rem; /* Aumenta o tamanho do título */
+}
+
+.projeto__descricao {
+  font-size: 1.5rem;
+  color: var(--cor-texto);
+  margin-bottom: 1rem;
+}
+
+.projeto__botoes {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; /* Espaçamento entre os botões */
+  justify-content: center; /* Centraliza os botões */
+}
+
+.projeto__botao {
+  text-decoration: none;
+  background-color: var(--cor-botao);
+  color: var(--cor-botao-texto);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.projeto__botao:hover {
+  background-color: var(--cor-botao-hover);
+}
+
+.contato {
+  padding: 2rem;
+}
+
+.contato img {
+  display: none; /* A imagem não aparece em mobile */
+}
+
+.contato__info {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato__formulario {
+  width: 100%;
+}
+
+.contato__formulario label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contato__formulario input,
+.contato__formulario textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid var(--cor-texto);
+  border-radius: 5px;
+}
+
+.contato__botao {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  background-color: var(--cor-principal);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contato__botao:hover {
+  background-color: var(--cor-hover);
+}
+
+footer {
+  display: flexbox;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  border-top: 2px solid var(--cor-principal);
+  margin-top: 3rem;
+  padding-top: 2rem;
+  font-size: 2rem;
+}

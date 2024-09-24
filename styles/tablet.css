@@ -1,0 +1,180 @@
+@media (min-width: 48em) {
+  .cabecalho__titulo {
+    font-size: 3rem;
+  }
+
+  .navegacao__lista {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .navegacao__elemento a {
+    font-size: 2rem;
+  }
+
+  .apresentacao__foto {
+    width: 18rem; /* Aumentar um pouco o tamanho da foto para 768px */
+    margin-bottom: 2rem;
+  }
+
+  .apresentacao__titulo {
+    font-size: 3.2rem; /* Ajuste do título */
+    margin-bottom: 1.5rem;
+  }
+
+  .apresentacao__subtitulo {
+    font-size: 2rem; /* Subtítulo maior para boa leitura */
+    margin-bottom: 2rem;
+  }
+
+  .redes {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem; /* Espaçamento entre os ícones */
+  }
+
+  .redes__elemento a {
+    font-size: 1.8rem; /* Fonte ideal para tablets */
+  }
+
+  .sobre-mim {
+    padding: 3rem 2rem;
+  }
+
+  .sobre-mim__titulo {
+    font-size: 3rem; /* Título maior para melhor visualização */
+    margin-bottom: 2.5rem;
+  }
+
+  .sobre-mim__texto {
+    font-size: 1.8rem; /* Texto maior para tablets */
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+  }
+
+  .habilidades__lista {
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas em tablets */
+    justify-items: center; /* Centraliza os itens */
+  }
+
+  .habilidades__titulo {
+    font-size: 3rem; /* Título maior para tablets */
+  }
+
+  .habilidades__nome {
+    font-size: 1.4rem; /* Nome das habilidades maior */
+  }
+
+  .hobbies__lista {
+    grid-template-columns: repeat(6, 1fr); /* 1 coluna em tablets */
+  }
+
+  .hobbies__titulo {
+    font-size: 3rem; /* Título maior para tablets */
+  }
+
+  .hobbies__nome {
+    font-size: 1.4rem; /* Nome dos hobbies maior */
+  }
+
+  .formacao__lista {
+    grid-template-columns: repeat(3, 1fr); /* 1 coluna em Tablets */
+  }
+
+  .formacao__titulo {
+    font-size: 2.8rem; /* Tamanho maior do título em tablets */
+  }
+
+  .formacao__nome {
+    font-size: 1.6rem; /* Texto maior para as formações */
+  }
+
+  .formacao__detalhe {
+    font-size: 1.2rem; /* Detalhes com fonte maior */
+  }
+
+  .projetos__container {
+    grid-template-columns: 1fr;
+  }
+
+  .projetos__titulo {
+    text-align: center; /* Centraliza o título da seção */
+    font-size: 3rem; /* Aumenta o tamanho do título */
+    margin-bottom: 4rem; /* Espaço entre o título e os itens */
+    margin-top: 4rem;
+  }
+
+  .projeto__item {
+    flex-direction: row; /* Imagem e texto lado a lado */
+    justify-content: space-between; /* Distribui espaço entre imagem e info */
+    align-items: center; /* Centraliza verticalmente a imagem e o conteúdo */
+    text-align: left; /* Alinha o texto à esquerda */
+    gap: 1.5rem; /* Espaçamento entre imagem e texto */
+  }
+
+  .projeto__imagem {
+    width: 40%; /* Imagem ocupa 40% da largura */
+    height: auto;
+  }
+
+  .projeto__info {
+    width: 55%; /* Informações ocupam 55% da largura */
+    margin-left: 15rem;
+  }
+
+  .projeto__titulo {
+    font-size: 2.5rem; /* Aumenta o tamanho do título */
+  }
+
+  .projeto__descricao {
+    font-size: 1.5rem; /* Aumenta o tamanho da descrição */
+  }
+
+  .projeto__botoes {
+    justify-content: flex-start; /* Alinha os botões à esquerda */
+  }
+
+  .contato {
+    padding: 3rem;
+  }
+
+  /* A imagem ainda não aparece em 768px */
+  .contato img {
+    display: none;
+  }
+
+  .contato__info h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .contato__info p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Ajustes para formulário */
+  .contato__formulario {
+    width: 80%; /* Mais espaço na tela média */
+    margin: 0 auto;
+  }
+
+  .contato__formulario label {
+    font-size: 1.5rem;
+  }
+
+  .contato__formulario input,
+  .contato__formulario textarea {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .contato__formulario textarea {
+    height: 65px; /* Aumenta ainda mais a altura da textarea em telas maiores */
+  }
+
+  .contato__botao {
+    font-size: 1.5rem;
+  }
+}
