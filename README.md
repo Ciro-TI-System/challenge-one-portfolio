@@ -1,12 +1,12 @@
-<h1 align="center"><img src=".github/Badge-Portfólio.png"> Praticando Front End: Challenge Portifólio</h1>
+<h1 align="center"><img src=".github/Badge-Portfólio.png"> Praticando Front End: Challenge Portfólio</h1>
 
-#### ⚙️ Criação de um portifólio de apresentação. Desenvolvido para o desafio do curso `Praticando Front End: Challenge Portfólio` durante o <em>Oracle Next Education-T7</em> . ⚙️
+#### ⚙️ Criação de um portfólio de apresentação. Desenvolvido para o desafio do curso `Praticando Front End: Challenge Portfólio` durante o <em>Oracle Next Education-T7</em> . ⚙️
 
 <br>
 
 <div style="display: grid;" >
 <p>
-  <img src=".github/portifolio.png" width="90%">
+  <img src=".github/portfolio.png" width="90%">
 </p>
 </br>
 
